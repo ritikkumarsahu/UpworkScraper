@@ -1,0 +1,6 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/ritikkumarsahu/upwork_scraper_app.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/ritikkumarsahu/upwork_scraper_backend.git
