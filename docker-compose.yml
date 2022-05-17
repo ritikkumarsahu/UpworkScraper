@@ -32,6 +32,7 @@ services:
       - DOZZLE_PASSWORD=Admin@123
       - DOZZLE_NO_ANALYTICS=true
       - DOZZLE_TAILSIZE=100
+      - DOZZLE_BASE=/admin
     image: amir20/dozzle:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
