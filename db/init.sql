@@ -9,7 +9,9 @@ CREATE TABLE user (
     password varchar(30) not null,
     firstname varchar(255),
     lastname varchar(255),
-    phone varchar(15)
+    phone varchar(15),
+    disabled BOOLEAN DEFAULT 0,
+    logged_in BOOLEAN DEFAULT 0
 );
 -- ALTER TABLE user CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 INSERT INTO `user`(`email`, `password`, `firstname`, `lastname`, `phone`) VALUES ("admin@gmail.com","admin@123","admin","juppiter ai labs","1234567890");
