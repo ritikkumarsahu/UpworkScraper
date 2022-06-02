@@ -10,9 +10,11 @@ services:
       - "5000:5000"
     volumes:
       - ./app:/app
+    restart: always
   backend:
     container_name: upworkScraper_backend
     build: ./backend
+    restart: always
     ports:
       - "3000:3000"
   db:
@@ -22,6 +24,7 @@ services:
       - "32000:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
+    restart: always
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
   dozzle:
