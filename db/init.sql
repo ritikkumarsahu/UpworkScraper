@@ -16,6 +16,8 @@ CREATE TABLE user (
 -- ALTER TABLE user CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 INSERT INTO `user`(`email`, `password`, `firstname`, `lastname`, `phone`) VALUES ("admin@gmail.com","admin@123","admin","juppiter ai labs","1234567890");
 
+INSERT INTO `user` VALUES (2,'sales@jupiterailabs.com','Sales@123','Sales','juppiter ai labs','9911027368',0,0),(3,'vikas.sawant@jupiterailabs.com','Vikas@123','Vikas','Shawant','9911027368',0,0),(4,'Shirashti.jain@jupiterailabs.com','Shirashti@123','Shirashti','Jain','9479602803',0,0),(5,'mohit@juppiterailabs.com','Mohit@123','Mohit','Jain','9479602803',0,0),(6,'sonal@jupiterailabs.com','Sonal@123','Sonal','Jain','9479602803',0,0),(7,'kusumkar@juppiterailabs.com','Kusumkar@123','kusumkar','juppiter ai labs','1234567890',0,0);
+
 CREATE TABLE job (
     id int unsigned auto_increment primary key,
     keyword varchar(255) not null,
